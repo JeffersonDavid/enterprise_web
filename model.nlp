@@ -1,0 +1,1023 @@
+{
+  "settings": {
+    "languages": [
+      "es"
+    ],
+    "forcesER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "es"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "es": {
+        "settings": {
+          "locale": "es",
+          "trainByDomain": false,
+          "tag": "domain-manager-es",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hol,que,tal": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "como,esta": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "hol": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "buen,dia": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "buen,tard": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "holaa": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "hoool": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "bueeen": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "que,tal": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "contexto.saludos",
+            "domain": "default"
+          },
+          "hac,necesit,ped,un": {
+            "intent": "contexto.pedidos",
+            "domain": "default"
+          },
+          "ped": {
+            "intent": "contexto.pedidos",
+            "domain": "default"
+          },
+          "compr,quer": {
+            "intent": "contexto.pedidos",
+            "domain": "default"
+          },
+          "compr,pan": {
+            "intent": "contexto.pedidos",
+            "domain": "default"
+          },
+          "pan,ped": {
+            "intent": "contexto.pedidos",
+            "domain": "default"
+          },
+          "caj,compr": {
+            "intent": "contexto.pedidos",
+            "domain": "default"
+          },
+          "compr,pan,pit": {
+            "intent": "contexto.pedidos",
+            "domain": "default"
+          },
+          "caj,cuant,de,el,pan,val": {
+            "intent": "contexto.preciocaja",
+            "domain": "default"
+          },
+          "caj,cost,cuant,de,el,pan": {
+            "intent": "contexto.preciocaja",
+            "domain": "default"
+          },
+          "caj,cost,cuant,el": {
+            "intent": "contexto.preciocaja",
+            "domain": "default"
+          },
+          "cad,caj,cost,cuant": {
+            "intent": "contexto.preciocaja",
+            "domain": "default"
+          },
+          "1,caj,cost,cuant": {
+            "intent": "contexto.preciocaja",
+            "domain": "default"
+          },
+          "caj,cost,cuant,una": {
+            "intent": "contexto.preciocaja",
+            "domain": "default"
+          },
+          "caj,cuant,pan,tra,una": {
+            "intent": "contexto.panesxcaja",
+            "domain": "default"
+          },
+          "caj,cuant,pit,tra,una": {
+            "intent": "contexto.panesxcaja",
+            "domain": "default"
+          },
+          "caj,cuant,en,hab,pit,total,una": {
+            "intent": "contexto.panesxcaja",
+            "domain": "default"
+          },
+          "caj,cuant,pan,ten,una": {
+            "intent": "contexto.panesxcaja",
+            "domain": "default"
+          },
+          "bols,caj,cuant,tra,una": {
+            "intent": "contexto.bolsasxcaja",
+            "domain": "default"
+          },
+          "bols,caj,cuant,ten,una": {
+            "intent": "contexto.bolsasxcaja",
+            "domain": "default"
+          },
+          "bols,caj,por": {
+            "intent": "contexto.bolsasxcaja",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "contexto.saludos": "default",
+          "contexto.pedidos": "default",
+          "contexto.preciocaja": "default",
+          "contexto.panesxcaja": "default",
+          "contexto.bolsasxcaja": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Hola que tal",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "como estas",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hola",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "Buenos dias",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "Buenas tardes",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "holaaa",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "hooola",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "bueeenas",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "quee tal???",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "como estas?",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "contexto.saludos"
+          },
+          {
+            "domain": "default",
+            "utterance": "necesito hacer un pedido",
+            "intent": "contexto.pedidos"
+          },
+          {
+            "domain": "default",
+            "utterance": "pedidos",
+            "intent": "contexto.pedidos"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero comprar",
+            "intent": "contexto.pedidos"
+          },
+          {
+            "domain": "default",
+            "utterance": "comprar pan",
+            "intent": "contexto.pedidos"
+          },
+          {
+            "domain": "default",
+            "utterance": "pedir pan",
+            "intent": "contexto.pedidos"
+          },
+          {
+            "domain": "default",
+            "utterance": "comprar cajas",
+            "intent": "contexto.pedidos"
+          },
+          {
+            "domain": "default",
+            "utterance": "comprar pan pita",
+            "intent": "contexto.pedidos"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto vale la caja de pan",
+            "intent": "contexto.preciocaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto cuesta la caja de pan",
+            "intent": "contexto.preciocaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto cuesta la caja",
+            "intent": "contexto.preciocaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto cuesta cada caja",
+            "intent": "contexto.preciocaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto cuesta 1 caja",
+            "intent": "contexto.preciocaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto cuesta una caja",
+            "intent": "contexto.preciocaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantos panes trae una caja caja",
+            "intent": "contexto.panesxcaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantos pitas trae una caja caja",
+            "intent": "contexto.panesxcaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantos pitas hay en total en una caja",
+            "intent": "contexto.panesxcaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantos panes tiene una caja",
+            "intent": "contexto.panesxcaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantas bolsas trae una caja",
+            "intent": "contexto.bolsasxcaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantas bolsas tiene una caja",
+            "intent": "contexto.bolsasxcaja"
+          },
+          {
+            "domain": "default",
+            "utterance": "bolsas por caja",
+            "intent": "contexto.bolsasxcaja"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "es",
+              "tag": "nlu-es",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "1": 1,
+              "hol": 1,
+              "que": 1,
+              "tal": 1,
+              "como": 1,
+              "esta": 1,
+              "buen": 1,
+              "dia": 1,
+              "tard": 1,
+              "holaa": 1,
+              "hoool": 1,
+              "bueeen": 1,
+              "hey": 1,
+              "hi": 1,
+              "necesit": 1,
+              "hac": 1,
+              "un": 1,
+              "ped": 1,
+              "quer": 1,
+              "compr": 1,
+              "pan": 1,
+              "caj": 1,
+              "pit": 1,
+              "cuant": 1,
+              "val": 1,
+              "el": 1,
+              "de": 1,
+              "cost": 1,
+              "cad": 1,
+              "una": 1,
+              "tra": 1,
+              "hab": 1,
+              "en": 1,
+              "total": 1,
+              "ten": 1,
+              "bols": 1,
+              "por": 1
+            },
+            "intents": {
+              "contexto.saludos": 1,
+              "contexto.pedidos": 1,
+              "contexto.preciocaja": 1,
+              "contexto.panesxcaja": 1,
+              "contexto.bolsasxcaja": 1
+            },
+            "intentFeatures": {
+              "contexto.saludos": {
+                "hol": 1,
+                "que": 1,
+                "tal": 1,
+                "como": 1,
+                "esta": 1,
+                "buen": 1,
+                "dia": 1,
+                "tard": 1,
+                "holaa": 1,
+                "hoool": 1,
+                "bueeen": 1,
+                "hey": 1,
+                "hi": 1
+              },
+              "contexto.pedidos": {
+                "necesit": 1,
+                "hac": 1,
+                "un": 1,
+                "ped": 1,
+                "quer": 1,
+                "compr": 1,
+                "pan": 1,
+                "caj": 1,
+                "pit": 1
+              },
+              "contexto.preciocaja": {
+                "1": 1,
+                "cuant": 1,
+                "val": 1,
+                "el": 1,
+                "caj": 1,
+                "de": 1,
+                "pan": 1,
+                "cost": 1,
+                "cad": 1,
+                "una": 1
+              },
+              "contexto.panesxcaja": {
+                "cuant": 1,
+                "pan": 1,
+                "tra": 1,
+                "una": 1,
+                "caj": 1,
+                "pit": 1,
+                "hab": 1,
+                "en": 1,
+                "total": 1,
+                "ten": 1
+              },
+              "contexto.bolsasxcaja": {
+                "cuant": 1,
+                "bols": 1,
+                "tra": 1,
+                "una": 1,
+                "caj": 1,
+                "ten": 1,
+                "por": 1
+              }
+            },
+            "featuresToIntent": {
+              "1": [
+                "contexto.preciocaja"
+              ],
+              "hol": [
+                "contexto.saludos"
+              ],
+              "que": [
+                "contexto.saludos"
+              ],
+              "tal": [
+                "contexto.saludos"
+              ],
+              "como": [
+                "contexto.saludos"
+              ],
+              "esta": [
+                "contexto.saludos"
+              ],
+              "buen": [
+                "contexto.saludos"
+              ],
+              "dia": [
+                "contexto.saludos"
+              ],
+              "tard": [
+                "contexto.saludos"
+              ],
+              "holaa": [
+                "contexto.saludos"
+              ],
+              "hoool": [
+                "contexto.saludos"
+              ],
+              "bueeen": [
+                "contexto.saludos"
+              ],
+              "hey": [
+                "contexto.saludos"
+              ],
+              "hi": [
+                "contexto.saludos"
+              ],
+              "necesit": [
+                "contexto.pedidos"
+              ],
+              "hac": [
+                "contexto.pedidos"
+              ],
+              "un": [
+                "contexto.pedidos"
+              ],
+              "ped": [
+                "contexto.pedidos"
+              ],
+              "quer": [
+                "contexto.pedidos"
+              ],
+              "compr": [
+                "contexto.pedidos"
+              ],
+              "pan": [
+                "contexto.pedidos",
+                "contexto.preciocaja",
+                "contexto.panesxcaja"
+              ],
+              "caj": [
+                "contexto.pedidos",
+                "contexto.preciocaja",
+                "contexto.panesxcaja",
+                "contexto.bolsasxcaja"
+              ],
+              "pit": [
+                "contexto.pedidos",
+                "contexto.panesxcaja"
+              ],
+              "cuant": [
+                "contexto.preciocaja",
+                "contexto.panesxcaja",
+                "contexto.bolsasxcaja"
+              ],
+              "val": [
+                "contexto.preciocaja"
+              ],
+              "el": [
+                "contexto.preciocaja"
+              ],
+              "de": [
+                "contexto.preciocaja"
+              ],
+              "cost": [
+                "contexto.preciocaja"
+              ],
+              "cad": [
+                "contexto.preciocaja"
+              ],
+              "una": [
+                "contexto.preciocaja",
+                "contexto.panesxcaja",
+                "contexto.bolsasxcaja"
+              ],
+              "tra": [
+                "contexto.panesxcaja",
+                "contexto.bolsasxcaja"
+              ],
+              "hab": [
+                "contexto.panesxcaja"
+              ],
+              "en": [
+                "contexto.panesxcaja"
+              ],
+              "total": [
+                "contexto.panesxcaja"
+              ],
+              "ten": [
+                "contexto.panesxcaja",
+                "contexto.bolsasxcaja"
+              ],
+              "bols": [
+                "contexto.bolsasxcaja"
+              ],
+              "por": [
+                "contexto.bolsasxcaja"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "es",
+                "tag": "nlu-es",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hol",
+                "que",
+                "tal",
+                "como",
+                "esta",
+                "buen",
+                "dia",
+                "tard",
+                "holaa",
+                "hoool",
+                "bueeen",
+                "hey",
+                "hi",
+                "necesit",
+                "hac",
+                "un",
+                "ped",
+                "quer",
+                "compr",
+                "pan",
+                "caj",
+                "pit",
+                "cuant",
+                "val",
+                "el",
+                "de",
+                "cost",
+                "cad",
+                "1",
+                "una",
+                "tra",
+                "hab",
+                "en",
+                "total",
+                "ten",
+                "bols",
+                "por"
+              ],
+              "intents": [
+                "contexto.saludos",
+                "contexto.pedidos",
+                "contexto.preciocaja",
+                "contexto.panesxcaja",
+                "contexto.bolsasxcaja"
+              ],
+              "perceptrons": [
+                [
+                  2.6564440727233887,
+                  1.3085572719573975,
+                  1.3085572719573975,
+                  1.960402250289917,
+                  1.960402250289917,
+                  2.6150050163269043,
+                  1.3066476583480835,
+                  1.3114323616027832,
+                  4.008641242980957,
+                  4.0135111808776855,
+                  4.018383026123047,
+                  3.9729764461517334,
+                  3.9777677059173584,
+                  -1.466787576675415,
+                  -1.466787576675415,
+                  -1.466787576675415,
+                  -10.30290412902832,
+                  -3.700282335281372,
+                  -6.681177616119385,
+                  -3.6955502033233643,
+                  -5.621028423309326,
+                  -0.9276371598243713,
+                  -2.6253645420074463,
+                  -0.20281054079532623,
+                  -0.7586682438850403,
+                  -0.3747516870498657,
+                  -1.6739983558654785,
+                  -0.488608181476593,
+                  -0.48570528626441956,
+                  -0.8192583322525024,
+                  -0.41345882415771484,
+                  -0.13874098658561707,
+                  -0.13874098658561707,
+                  -0.13874098658561707,
+                  -0.115277960896492,
+                  -2.5148682594299316,
+                  -2.24827241897583,
+                  10.407396176570687
+                ],
+                [
+                  -1.9267888069152832,
+                  -1.012622594833374,
+                  -1.012622594833374,
+                  -1.1376678943634033,
+                  -1.1376678943634033,
+                  -1.4890055656433105,
+                  -0.7508074045181274,
+                  -0.6775633096694946,
+                  -1.9262027740478516,
+                  -1.9256222248077393,
+                  -1.925036072731018,
+                  -1.924443244934082,
+                  -1.923844814300537,
+                  0.12981900572776794,
+                  0.12981900572776794,
+                  0.12981900572776794,
+                  11.972743034362793,
+                  1.056123971939087,
+                  11.375307083129883,
+                  0.6772538423538208,
+                  1.0567940473556519,
+                  0.3039761185646057,
+                  -3.0310921669006348,
+                  -0.557999312877655,
+                  -1.2116814851760864,
+                  -1.0695570707321167,
+                  -0.8370568156242371,
+                  -0.09744449704885483,
+                  -0.04042037948966026,
+                  -1.5152891874313354,
+                  -0.7035086750984192,
+                  -0.04679565131664276,
+                  -0.04679565131664276,
+                  -0.04679565131664276,
+                  -0.640882134437561,
+                  -1.7296488285064697,
+                  -1.7296488285064697,
+                  1.9400992203077023
+                ],
+                [
+                  -0.2185990959405899,
+                  -0.15305329859256744,
+                  -0.15305329859256744,
+                  -0.16171446442604065,
+                  -0.16171446442604065,
+                  -0.20208989083766937,
+                  -0.09496583789587021,
+                  -0.08511066436767578,
+                  -0.1474832147359848,
+                  -0.1425734907388687,
+                  -0.1378207951784134,
+                  -0.12932166457176208,
+                  -0.12891070544719696,
+                  -0.04644697904586792,
+                  -0.04644697904586792,
+                  -0.04644697904586792,
+                  -0.22020819783210754,
+                  -0.027952345088124275,
+                  -1.8391718864440918,
+                  -2.756409168243408,
+                  1.8100146055221558,
+                  -2.7611405849456787,
+                  4.233628749847412,
+                  7.142971038818359,
+                  1.0737712383270264,
+                  2.7521414756774902,
+                  7.1698222160339355,
+                  1.0664530992507935,
+                  1.0694507360458374,
+                  1.0254982709884644,
+                  -4.321171283721924,
+                  -1.4399760961532593,
+                  -1.4399760961532593,
+                  -1.4399760961532593,
+                  -4.320291996002197,
+                  -2.7585716247558594,
+                  -0.699713945388794,
+                  0.011112847999670755
+                ],
+                [
+                  -0.09572859108448029,
+                  -0.08115005493164062,
+                  -0.08115005493164062,
+                  -0.07953199744224548,
+                  -0.07953199744224548,
+                  -0.09951937943696976,
+                  -0.04305094853043556,
+                  -0.038758814334869385,
+                  -0.04235508665442467,
+                  -0.04062218964099884,
+                  -0.03896015137434006,
+                  -0.03507467731833458,
+                  -0.03363913670182228,
+                  -0.018000010401010513,
+                  -0.018000010401010513,
+                  -0.018000010401010513,
+                  -1.6147408485412598,
+                  -0.016554277390241623,
+                  -5.0391526222229,
+                  3.8305373191833496,
+                  1.7783006429672241,
+                  3.817793846130371,
+                  2.235775947570801,
+                  -1.528266191482544,
+                  -2.0854945182800293,
+                  -1.9135277271270752,
+                  -6.190983295440674,
+                  -0.23839738965034485,
+                  -0.15166868269443512,
+                  4.7868547439575195,
+                  4.27073860168457,
+                  1.4259165525436401,
+                  1.4259165525436401,
+                  1.4259165525436401,
+                  4.258930683135986,
+                  -10.466650009155273,
+                  -0.07535814493894577,
+                  -2.6086561312730847
+                ],
+                [
+                  -0.25687575340270996,
+                  -0.19300878047943115,
+                  -0.19300878047943115,
+                  -0.19301915168762207,
+                  -0.19301915168762207,
+                  -0.21246714890003204,
+                  -0.09096173197031021,
+                  -0.08222755044698715,
+                  -0.12112932652235031,
+                  -0.11630915105342865,
+                  -0.12703090906143188,
+                  -0.11613843590021133,
+                  -0.11172802001237869,
+                  -0.059839826077222824,
+                  -0.059839826077222824,
+                  -0.059839826077222824,
+                  -0.20521369576454163,
+                  -0.052566029131412506,
+                  -1.1783907413482666,
+                  -3.5842807292938232,
+                  1.1247074604034424,
+                  -3.270482063293457,
+                  -0.40482860803604126,
+                  -0.2685389220714569,
+                  -0.95455402135849,
+                  -0.595443606376648,
+                  -2.3923122882843018,
+                  -0.3437415659427643,
+                  -0.271280437707901,
+                  1.51582670211792,
+                  1.4505603313446045,
+                  -0.3665722608566284,
+                  -0.3665722608566284,
+                  -0.3665722608566284,
+                  1.4535443782806396,
+                  11.011597633361816,
+                  2.5642247200012207,
+                  -0.4143493893599342
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "es",
+        "Hola que tal"
+      ],
+      [
+        "es",
+        "como estas"
+      ],
+      [
+        "es",
+        "Hola"
+      ],
+      [
+        "es",
+        "Buenos dias"
+      ],
+      [
+        "es",
+        "Buenas tardes"
+      ],
+      [
+        "es",
+        "holaaa"
+      ],
+      [
+        "es",
+        "hooola"
+      ],
+      [
+        "es",
+        "bueeenas"
+      ],
+      [
+        "es",
+        "quee tal???"
+      ],
+      [
+        "es",
+        "como estas?"
+      ],
+      [
+        "es",
+        "hey"
+      ],
+      [
+        "es",
+        "hi"
+      ],
+      [
+        "es",
+        "necesito hacer un pedido"
+      ],
+      [
+        "es",
+        "pedidos"
+      ],
+      [
+        "es",
+        "quiero comprar"
+      ],
+      [
+        "es",
+        "comprar pan"
+      ],
+      [
+        "es",
+        "pedir pan"
+      ],
+      [
+        "es",
+        "comprar cajas"
+      ],
+      [
+        "es",
+        "comprar pan pita"
+      ],
+      [
+        "es",
+        "cuanto vale la caja de pan"
+      ],
+      [
+        "es",
+        "cuanto cuesta la caja de pan"
+      ],
+      [
+        "es",
+        "cuanto cuesta la caja"
+      ],
+      [
+        "es",
+        "cuanto cuesta cada caja"
+      ],
+      [
+        "es",
+        "cuanto cuesta 1 caja"
+      ],
+      [
+        "es",
+        "cuanto cuesta una caja"
+      ],
+      [
+        "es",
+        "cuantos panes trae una caja caja"
+      ],
+      [
+        "es",
+        "cuantos pitas trae una caja caja"
+      ],
+      [
+        "es",
+        "cuantos pitas hay en total en una caja"
+      ],
+      [
+        "es",
+        "cuantos panes tiene una caja"
+      ],
+      [
+        "es",
+        "cuantas bolsas trae una caja"
+      ],
+      [
+        "es",
+        "cuantas bolsas tiene una caja"
+      ],
+      [
+        "es",
+        "bolsas por caja"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "es": {
+        "contexto.saludos": [
+          {
+            "answer": "Hola, mi nombre es Louis, soy un agente virual creado para ofrecerte información sobre nuestro producto, ¿ en que puedo ayudarte ?"
+          }
+        ],
+        "contexto.pedidos": [
+          {
+            "answer": "Para hacer un pedido puedes dirigirte a la seccion de pedidos"
+          }
+        ],
+        "contexto.preciocaja": [
+          {
+            "answer": "El precio de cada caja de pan es 26€"
+          }
+        ],
+        "contexto.panesxcaja": [
+          {
+            "answer": "La caja trae un total de 180 pitas por caja"
+          }
+        ],
+        "contexto.bolsasxcaja": [
+          {
+            "answer": "La caja trae un total de 30 bolsas por caja"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

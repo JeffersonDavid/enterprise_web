@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+    overflow: hidden;
+}
+
+#navbar-default{
+  margin-right: 10%;
+}
+
+.link-navi{
+
+}
+
+.icon_flv{
+  width: 20px;
+  margin-left: 5px;
+}
+
+.link-container{
+  display: inline-flex;
+}
+
+.homeview{
+    background: url(https://www.grupoatlanta.es/materiales_web/img/fotos%20rey/010549%20pan%20pita%20libanes.jpg%201.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.content-right{
+  margin-right: 50%;
+}
+
+.cardWelcome{
+  background: rgba(255, 255, 255, 0.596);
+  margin-top: 10%;
+}
+#btn_welcome {
+  background-color:#00000042;
+}
+
+#btn_welcome:hover {
+  background-color:black;
+}
+nav{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 90px;
+}
+
+footer{
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  margin: 0px !important;
+  padding: 0px;
+}
+
+.chatbot{
+  position: fixed;
+  top: 14%;
+  right: 0;
+  z-index: 100;
+  margin: 25px;
+}
+
+ /*
+  border-radius: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+  */
+.chatCont{
+
+    padding: 10px;
+}
+
+#chatbox{
+  border: 0.5px solid #dfd5d5;
+}
+
+.chatflow{
+  margin-top: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 150px;
+  border: 1px solid #8080801c;
+  border-radius: 7px;
+  padding: 0.5px;
+}
+.chatflow > div{
+
+  margin: 2px;
+}
+
+.borderlight{
+  border-radius: 7px;
+  border-color: #c7c9cb;
+  margin-top: 7px;
+}
+.sendbtn{
+  margin-top: 20px;
+  font-size: 8pt;
+
+}
+
+.bocadillo-cuadrado {
+  font-style: oblique;
+  position: relative;
+  height: 50px;
+  width: 140px;
+  background: white;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  font-family: '__Inter_0ec1f4', '__Inter_Fallback_0ec1f4';
+    font-style: normal;
+}
+.bocadillo-cuadrado:before {
+  border: 25px solid white;
+  content: '';
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -48px;
+  left: calc(30% - 25px)
+}
+
+.bineta{
+  font-family: sans-serif;;
+  font-size: 10pt;
+}
+
+.closebtn{
+  width: 75px;
+}
+
+.iconbot{
+  margin-top: 25px
+}
+.animation{
+  animation: beat .90s infinite alternate;
+}
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
+
+/* typing animation */
+.loaderAnimation{
+  display: -webkit-inline-box;
+}
+
+.pointanim{
+  
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.chatflow::--webkit-scrollbar{
+  width: 102px;
+}
+
+/*+++++++++++++++ */
+.css-typing p {
+  
+  font-family: '__Inter_0ec1f4', '__Inter_Fallback_0ec1f4';
+    font-style: normal;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.noborderanim{
+  border: none;
+}
+.css-typing p:nth-child(1) {
+  width: 13em;
+  -webkit-animation: type 3s steps(40, end);
+  animation: type 3s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+   
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+   
+  }
+  100% {
+    border: none;
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
