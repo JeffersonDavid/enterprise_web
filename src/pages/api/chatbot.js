@@ -1,11 +1,6 @@
 import BotResponse from '../../app/scripts/bot'
 
 export default async function handler(req, res) {
-
-
-
-    
-
    
     if (req.method === 'POST') {
         if(req.body.input=='dispatch'){

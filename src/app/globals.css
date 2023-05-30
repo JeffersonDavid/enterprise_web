@@ -85,10 +85,10 @@ footer{
 
 .chatbot{
   position: fixed;
-  top: 14%;
-  right: 0;
-  z-index: 100;
-  margin: 25px;
+  bottom: 2%;
+  right: 1%;
+  z-index: 1000 !important;
+  margin: 5px;
 }
 
  /*
@@ -285,6 +285,7 @@ footer{
 .boxformcont{
   max-width: 500px;
   width: 100%;
+  margin: auto;
 }
 
 .formtitle{

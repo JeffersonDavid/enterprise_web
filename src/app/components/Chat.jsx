@@ -4,7 +4,7 @@
 import User from '../../../public/images/user.png';
 import Image from 'next/image';
 import React from 'react';
-import Chatbot from '../../../public/images/chat-bot.png'
+import Chatbot from '../../../public/images/chatbotor.png'
 
 import {useEffect} from 'react'
 
@@ -106,14 +106,14 @@ return(
 
     <button onClick={ activateBot } style={{display:chatIcon}}>
         <div className='chatCont'>
-
+{/*
             <div className="bocadillo-cuadrado animation"> 
 
                 <div className="css-typing"><p className='noborderanim'>¿Necesitas ayuda? <br></br> Pulse aquí</p></div>
 
            </div>
-
-            <Image src={Chatbot} width={80} height={80} alt="Com" className="iconbot"/>
+*/}
+            <Image src={Chatbot} width={50} height={50} alt="Com" className="iconbot animation"/>
         </div>
     </button>
 
