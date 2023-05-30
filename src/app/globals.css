@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./auxi.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -251,4 +252,41 @@ footer{
   50% {
     border-color: tranparent;
   }
+}
+
+
+.sdbar{
+  position: absolute;
+  left: 0;
+  /*
+  border: 1px solid #e5e2e2;
+  border-radius: 20px;
+  */
+}
+
+.cticons{
+  background: white;
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid #e5e2e2;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.caller{
+  margin-bottom: 7px;
+  background: white;
+  border-radius: 7px;
+  height: 60px;
+  box-shadow: none;
+
+}
+
+.boxformcont{
+  max-width: 500px;
+  width: 100%;
+}
+
+.formtitle{
+  margin: 3px;
 }
