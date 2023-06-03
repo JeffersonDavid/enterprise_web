@@ -286,8 +286,32 @@ footer{
   max-width: 500px;
   width: 100%;
   margin: auto;
+  margin-top: 3%;
 }
 
 .formtitle{
   margin: 3px;
+}
+
+.parentprod{
+  width: 100;
+  margin: auto;
+}
+.parentprod:first-child{
+  margin: auto;
+}
+
+.pcont{
+  max-width: 20rem;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.prc{
+  display: flex;
+  flex-wrap:wrap
+}
+
+.meta {
+  margin-left: auto !important;
 }

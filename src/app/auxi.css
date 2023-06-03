@@ -280,7 +280,7 @@
     position: absolute;
     left: 0;
   }
-  
+  html,body,main{height: 100%;}
 
   
 

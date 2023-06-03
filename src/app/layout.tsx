@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
 
            <NavBar/>
-            <main className="homeview flex min-h-screen items-center justify-between p-24">
+            <main className="homeview flex items-center justify-between">
               {children} 
               <Chat/>
             </main>
