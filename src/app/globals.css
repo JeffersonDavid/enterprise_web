@@ -89,6 +89,14 @@ footer{
   right: 1%;
   z-index: 1000 !important;
   margin: 5px;
+
+
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
  /*
@@ -315,3 +323,24 @@ footer{
 .meta {
   margin-left: auto !important;
 }
+
+#defaultModal{
+  display: block;
+}
+
+.popcontainer{
+  z-index: 1000 !important;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.449);
+  position: absolute;
+  top: 0;
+}
+
+.captcha{
+  width: 40%;
+  margin: auto;
+  margin-top: 15%;
+  z-index: 1000 !important;
+}
+
