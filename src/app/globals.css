@@ -99,6 +99,10 @@ footer{
   -ms-user-select: none;
 }
 
+.btnbcolor{
+  background: #000000c7;
+  padding: 4px;
+}
  /*
   border-radius: 100px;
     border-width: 2px;
